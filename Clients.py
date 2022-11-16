@@ -1,12 +1,14 @@
 
 class Client:
-    def __init__(self, FIO, age, city, ticket_number, arrival_date, departure_date):
+    def __init__(self, FIO, age, city, ticket_number, arrival_date, departure_date, frame, room):
         self.__FIO = FIO
         self.__age = age
         self.__city = city
         self.__ticket_number = ticket_number
         self.__arrival_date = arrival_date
         self.__departure_date = departure_date
+        self.__frame = frame
+        self.__room = room
 
     @property
     def FIO(self):
@@ -55,5 +57,12 @@ class Client:
     @departure_date.setter
     def departure_date(self, departure_date):
         self.__departure_date = departure_date
+
+    @property
+    def frame(self):
+        return self.frame
+    @frame.setter
+    def frame(self, frame):
+        self.__frame = frame
 
 
